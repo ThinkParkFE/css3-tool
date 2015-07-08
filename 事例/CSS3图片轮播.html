@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>CSS3图片轮播</title>
+<style>
+html,body,div,p,ul,li,img,a{padding:0;margin:0;}
+body{font-size:12px;}
+img{border:none;}
+.focus_img{position:relative;width:500px;height:300px; overflow:hidden;margin:50px;border:1px solid #ccc;}
+.focus_img:hover .img_list{ -webkit-animation-play-state:paused;}
+.focus_img:hover .index li{ -webkit-animation-play-state:paused;}
+.focus_img ul{position:absolute;}
+.focus_img .img_list li{width:500px;height:300px; overflow:hidden;}
+.focus_img .img_list li img{width:500px;height:300px; }
+.focus_img .img_list{
+	top:0;
+	left:0;
+	-webkit-animation-name:img_list;
+	-webkit-animation-duration:15s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-transition-timing-function:ease-in;
+	-webkit-animation-delay:1s;
+}
+@-webkit-keyframes img_list{
+	0% {top:0;}
+	10% {top:-300px;}
+	20% {top:-300px;}
+	30% {top:-600px;}
+	40% {top:-600px;}
+	50% {top:-900px;}
+	60% {top:-900px;}
+	70% {top:-1200px;}
+	80% {top:-1200px;}
+	90% {top:0;}
+	100% {top:0;}
+}
+.focus_img .index{
+	bottom:10px;
+	right:10px;
+}
+.focus_img .index li{float:left;width:16px;height:16px;border:1px solid #ccc;background:rgba(255,255,255,0.8); text-align:center; line-height:16px; overflow:hidden; cursor:pointer;margin-right:2px;
+  -webkit-animation-duration:15s;
+  -webkit-animation-delay:1s;
+  -webkit-animation-iteration-count:infinite;
+}
+
+.focus_img .index .one{
+	background:rgba(0,0,0,0.8);
+	color:#fff;
+    -webkit-animation-name:one;
+}
+@-webkit-keyframes one{
+	10%,20%,30%,40%,50%,60%,70%,80%{background:rgba(255,255,255,0.8);color:#000;}
+	90%,0%,100%{background:rgba(0,0,0,0.8);color:#fff;}
+}
+.focus_img .index .two{
+    -webkit-animation-name:two;
+}
+
+@-webkit-keyframes two{
+	10%,20%{background:rgba(0,0,0,0.8);color:#fff;}
+	0%,30%,40%,50%,60%,70%,80%,90%,100%{background:rgba(255,255,255,0.8);color:#000;}
+}
+.focus_img .index .three{
+    -webkit-animation-name:three;
+}
+@-webkit-keyframes three{
+	30%,40%{background:rgba(0,0,0,0.8);color:#fff;}
+	0%,10%,20%,50%,60%,70%,80%,90%,100%{background:rgba(255,255,255,0.8);color:#000;}
+}
+.focus_img .index .four{
+    -webkit-animation-name:four;
+}
+@-webkit-keyframes four{
+	50%,60%{background:rgba(0,0,0,0.8);color:#fff;}
+	0%,10%,20%,30%,40%,70%,80%,90%,100%{background:rgba(255,255,255,0.8);color:#000;}
+}
+.focus_img .index .five{
+    -webkit-animation-name:five;
+}
+@-webkit-keyframes five{
+	0%,10%,20%,30%,40%,50%,60%,90%,100%{background:rgba(255,255,255,0.8);color:#000;}
+	70%,80%{background:rgba(0,0,0,0.8);color:#fff;}
+}
+</style>
+</head>
+
+<body>
+<h1>纯CSS焦点图效果</h1>
+<div class="focus_img">
+    <ul class="img_list">
+        <li><a href="#"><img src="1.jpg" alt="aaa"></a></li>
+        <li><a href="#"><img src="2.jpg" alt="bbb"></a></li>
+        <li><a href="#"><img src="3.jpg" alt="ccc"></a></li>
+        <li><a href="#"><img src="4.jpg" alt="ddd"></a></li>
+        <li><a href="#"><img src="5.jpg" alt="eee"></a></li>
+    </ul>
+    <ul class="index">
+        <li class="one">1</li>
+        <li class="two">2</li>
+        <li class="three">3</li>
+        <li class="four">4</li>
+        <li class="five">5</li>
+    </ul>
+</div>
+
+
+</body></html>

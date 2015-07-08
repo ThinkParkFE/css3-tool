@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>动画手册 - CSS3动画参考  - Web前端</title>
+<meta name="keywords" content="CSS3动画手册,css3动画,css3,animation,css3 animation,css3动画效果,css3动画工具,CSS3动画参考,css3过渡,CSS3变型,">
+<meta name="description" content="CSS3动画特效,css3过渡,CSS3变形效果，CSS3动画手册">
+<link href="css/api.css" rel="stylesheet" media="screen">
+<link href="./css/prettify.min.css" rel="stylesheet" type="text/css" />
+<link href="./css/style.min.css" rel="stylesheet" type="text/css" />
+<link href="./css/theme-balupton.min.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+    <script>
+    (function(a,b){function h(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function i(){var a=l.elements;return typeof a=="string"?a.split(" "):a}function j(a){var b={},c=a.createElement,f=a.createDocumentFragment,g=f();a.createElement=function(a){if(!l.shivMethods)return c(a);var f;return b[a]?f=b[a].cloneNode():e.test(a)?f=(b[a]=c(a)).cloneNode():f=c(a),f.canHaveChildren&&!d.test(a)?g.appendChild(f):f},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+i().join().replace(/\w+/g,function(a){return c(a),g.createElement(a),'c("'+a+'")'})+");return n}")(l,g)}function k(a){var b;return a.documentShived?a:(l.shivCSS&&!f&&(b=!!h(a,"article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio{display:none}canvas,video{display:inline-block;*display:inline;*zoom:1}[hidden]{display:none}audio[controls]{display:inline-block;*display:inline;*zoom:1}mark{background:#FF0;color:#000}")),g||(b=!j(a)),b&&(a.documentShived=b),a)}var c=a.html5||{},d=/^<|^(?:button|form|map|select|textarea|object|iframe|option|optgroup)$/i,e=/^<|^(?:a|b|button|code|div|fieldset|form|h1|h2|h3|h4|h5|h6|i|iframe|img|input|label|li|link|ol|option|p|param|q|script|select|span|strong|style|table|tbody|td|textarea|tfoot|th|thead|tr|ul)$/i,f,g;(function(){var c=b.createElement("a");c.innerHTML="<xyz></xyz>",f="hidden"in c,f&&typeof injectElementWithStyles=="function"&&injectElementWithStyles("#modernizr{}",function(b){b.hidden=!0,f=(a.getComputedStyle?getComputedStyle(b,null):b.currentStyle).display=="none"}),g=c.childNodes.length==1||function(){try{b.createElement("a")}catch(a){return!0}var c=b.createDocumentFragment();return typeof c.cloneNode=="undefined"||typeof c.createDocumentFragment=="undefined"||typeof c.createElement=="undefined"}()})();var l={elements:c.elements||"abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video",shivCSS:c.shivCSS!==!1,shivMethods:c.shivMethods!==!1,type:"default",shivDocument:k};a.html5=l,k(b)})(this,document)</script>
+    <![endif]-->
+
+</head>
+
+<body>
+<header class="mod_header">
+    <div class="inner">
+        <h1><span>CSS3</span>Animation<i class="ico_logo"></i></h1>
+        <ul class="mod_nav">
+            <li><a href="#" class="on">动画手册[Guide]</a></li>
+            <li><a href="index.html">动画工具[Tool]</a></li>
+        </ul>
+        
+    </div>
+</header>
+<div class="wrap">
+    <div class="menu" id="menu">.
+        <div class="menu_scroll">
+            <h2>变形</h2>
+            <ul>
+                <li><a href="animation/transform.html" class="hover">transform<span>[变形基础]</span></a></li>
+                <li><a href="animation/rotate.html">rotate()<span>[旋转]</span></a></li>
+                <li><a href="animation/scale.html">scale()<span>[缩放]</span></a></li>
+                <li><a href="animation/translate.html">translate()<span>[位移]</span></a></li>
+                <li><a href="animation/skew.html">skew()<span>[倾斜]</span></a></li>
+                <li><a href="animation/matrix.html">matrix()<span>[矩阵变形]</span></a></li>
+                <li><a href="animation/perspective.html">perspective<span>[透视]</span></a></li>
+            </ul>
+            <h2>过渡</h2>
+            <ul>
+                <li><a href="animation/transition-property.html">transition-property<span>[过渡的CSS属性]</span></a></li>
+                <li><a href="animation/transition-duration.html">transition-duration<span>[过渡时间]</span></a></li>
+                <li><a href="animation/transition-delay.html">transition-delay<span>[延迟时间]</span></a></li>
+                <li><a href="animation/transition-timing-function.html">transition-timing-function<span>[过渡效果]</span></a></li>
+            </ul>
+            <h2>动画</h2>
+            <ul>
+                <li><a href="animation/animation-name.html">animation-name<span>[动画名称]</span></a></li>
+                <li><a href="animation/animation-duration.html">animation-duration<span>[动画时间]</span></a></li>
+                <li><a href="animation/animation-timing-function.html">animation-timing-function<span>[播放方式]</span></a></li>
+                <li><a href="animation/animation-delay.html">animation-delay<span>[开始播放时间]</span></a></li>
+                <li><a href="animation/animation-iteration-count.html">animation-iteration-count<span>[播放次数]</span></a></li>
+                <li><a href="animation/animation-direction.html">animation-direction<span>[播放方向]</span></a></li>
+                <li><a href="animation/animation-fill-mode.html">animation-fill-mode<span>[播放后的状态]</span></a></li>
+                <li><a href="animation/animation-play-state.html">animation-play-state<span>[对象动画的状态]</span></a></li>
+
+            </ul>
+            <h2>关联属性</h2>
+            <ul>
+                <li><a href="animation/transform-origin.html">transform-origin<span>[变形原点]</span></a></li>
+                <li><a href="animation/perspective-origin.html">perspective-origin<span>[透视原点]</span></a></li>
+                <li><a href="animation/backface-visibility.html">backface-visibility<span>[隐藏内容的背面]</span></a></li>
+                <li><a href="animation/transform-style.html">transform-style<span>[3D呈现]</span></a></li>
+                
+            </ul>
+            
+        </div>
+    </div>
+    <div class="scroll_bar"></div>
+    <div class="content">
+        <div class="inner" id="ajaxHtml"><div id="loadHtml">
+    <div class="mod_detail">
+        <div class="column">
+            <h1>transform</h1>
+        </div>
+        <!--语法 star-->
+        <div class="mod_article">
+            <div class="column">
+                <h2>语法</h2>
+                <div class="code">
+                    <div class="code_box">
+                        <div class="code_css">
+                            <strong>transform:</strong> <span class="default">none</span> | &lt;transform-function&gt;[&lt;transform-function&gt;]*</div>
+                    </div>
+                </div>
+                <div class="mod_table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="20%">语法项目</th>
+                                <th>说明</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>初始值</td>
+                                <td>none</td>
+                            </tr>
+                            <tr>
+                                <td>适用于</td>
+                                <td>块元素和行内元素</td>
+                            </tr>
+                            <tr>
+                                <td>可否继承</td>
+                                <td>否</td>
+                            </tr>
+                             <tr>
+                                <td>媒介</td>
+                                <td>视觉</td>
+                            </tr>                           
+                            <tr>
+                                <td>版本</td>
+                                <td>CSS3.0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--语法 end-->
+        <!--说明 star-->
+        <div class="mod_article">
+            <div class="column">
+                <h2>说明</h2>
+                <div class="intro">
+                    <p>transform属性能对元素对象进行变形操作，主要包括以下几种：旋转rotate、缩放scale、移动translate、倾斜skew以及矩阵变形matrix。</p>
+                </div>
+            </div>
+        </div>
+        <!--说明 end-->
+        <!--取值 star-->
+        <div class="mod_article">
+            <div class="column">
+                <h2>取值</h2>
+                <div class="code">
+                    <div class="code_box">
+                        <div class="code_value">
+                            <p><strong>none:</strong>表示不进行变换；</p>
+                            <p><strong>&lt;transform-function&gt;:</strong>表示一个或多个变换函数，以空格分开，因此可以同时对一个元素进行transform的多种属性操作。</p>
+                            <ul>
+                                <li>1.rotate(&lt;angle&gt;):<strong>旋转元素</strong></li>
+                                <li>2.scale(&lt;number&gt;[, &lt;number&gt;]):<strong>缩放元素</strong></li>
+                                <li>3.translate(&lt;translation-value&gt;[, &lt;translation-value&gt;]):<strong>移动元素</strong></li>
+                                <li>4.skew(&lt;angle&gt; [,&lt;angle&gt;]):<strong>倾斜元素</strong></li>
+                                <li>5.matrix(&lt;number&gt;,&lt;number&gt;,&lt;number&gt;,&lt;number&gt;,&lt;number&gt;,&lt;number&gt;):<strong>矩阵变形</strong></li>
+                                <li>6.perspective(length):<strong>透视</strong></li>
+                            </ul>
+                            <p>示例：transform:rotate(90deg) scale(1.5,0.8) translate(100px,50px) skew(45deg,45deg);</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--取值 end-->
+        
+        <!--实例代码 star-->
+        <div class="mod_article">
+            <div class="column">
+                <h2>实例代码</h2>
+                <div class="code">
+                    <div class="code_inner">
+                        <span class="mod_tag">CSS</span>
+                        <span class="mod_copy">复制代码<div class="clipboardswf" id="copy_demo_css"></div></span>
+                        <textarea id="css_code" class="code_textarea">                        </textarea>
+                        <pre class="language-css prettyprint highlight lang-css linenums theme-balupton prettyprint-has" style="overflow: hidden; white-space: pre-wrap; max-height: none;"><ol class="linenums"><li class="L0"><span class="pun">.</span><span class="pln">demo_rotate</span><span class="pun">{</span><span class="pln"></span><br></li><li class="L1"><span class="pln">&nbsp; &nbsp; </span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">transition</span><span class="pun">:</span><span class="lit">1s</span><span class="pln"> ease all</span><span class="pun">;</span><span class="pln"></span><br></li><li class="L2"><span class="pln">&nbsp; &nbsp; </span><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">transition</span><span class="pun">:</span><span class="lit">1s</span><span class="pln"> ease all</span><span class="pun">;</span><span class="pln"></span><br></li><li class="L3"><span class="pln">&nbsp; &nbsp; padding</span><span class="pun">:</span><span class="lit">10px</span><span class="pun">;</span><span class="pln"></span><br></li><li class="L4"><span class="pln">&nbsp; &nbsp; margin</span><span class="pun">:</span><span class="lit">90px</span><span class="pln"> </span><span class="kwd">auto</span><span class="pun">;</span><span class="pln"></span><br></li><li class="L5"><span class="pln"></span><span class="pun">}</span><span class="pln"></span><br></li><li class="L6"><span class="pln"></span><span class="pun">.</span><span class="pln">demo_rotate</span><span class="pun">:</span><span class="pln">hover</span><span class="pun">{</span><span class="pln"></span><br></li><li class="L7"><span class="pln">&nbsp; &nbsp; </span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln">rotate</span><span class="pun">(</span><span class="lit">360deg</span><span class="pun">)</span><span class="pln"> scale</span><span class="pun">(</span><span class="lit">1.2</span><span class="pun">,</span><span class="lit">1.2</span><span class="pun">);</span><span class="pln"></span><br></li><li class="L8"><span class="pln">&nbsp; &nbsp; </span><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">transform</span><span class="pun">:</span><span class="pln">rotate</span><span class="pun">(</span><span class="lit">360deg</span><span class="pun">)</span><span class="pln"> scale</span><span class="pun">(</span><span class="lit">1.2</span><span class="pun">,</span><span class="lit">1.2</span><span class="pun">);</span><span class="pln"></span><br></li><li class="L9"><span class="pln">&nbsp; &nbsp; background</span><span class="pun">:</span><span class="com">#ff9900;</span><span class="pln"></span><br></li><li class="L0"><span class="pln"></span><span class="pun">}</span><span class="pln"></span><br></li></ol></pre>
+                    </div>
+                    <div class="code_inner">
+                        <span class="mod_tag">HTML</span>
+                        <span class="mod_copy">复制代码<div class="clipboardswf" id="copy_demo_html"></div></span>
+                        <textarea id="html_code" class="code_textarea">                        </textarea>
+                        <pre class="language-html prettyprint highlight lang-html linenums theme-balupton prettyprint-has" style="overflow: hidden; white-space: pre-wrap; max-height: none;"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"demo_box demo_rotate"</span><span class="tag">&gt;</span><span class="pln">鼠标经过变大1.2倍、旋转360度并改变背景色。</span><span class="tag">&lt;/div&gt;</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><br></li></ol></pre>
+                    </div>
+                    <a href="http://www.webx32.com/css3/guide.html#" id="run_demo" class="btn_run">运行</a>
+                    <a href="http://www.webx32.com/css3/guide.html#" id="run_demo_new" class="btn_run">新窗口运行</a>
+                </div>
+            </div>
+        </div>
+        <!--实例代码 end-->
+        <!--兼容性 star-->
+        <div class="mod_article">
+            <div class="column">
+                <h2>兼容性</h2>
+                <div class="mod_table">
+                    <table class="center">
+                        <thead>
+                            <tr>
+                                <th class="ie" width="20%">IE</th>
+                                <th class="firefox" width="20%">Firefox</th>
+                                <th class="opera" width="20%">Opera</th>
+                                <th class="safari" width="20%">Safari</th>
+                                <th class="chrome" width="20%">Chrome</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>IE 10+</td>
+                                <td>Firefox 3.5+</td>
+                                <td>Opera 11.50+</td>
+                                <td>Safari 10+</td>
+                                <td>Chrome 2.0+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--兼容性 end-->
+        <!--参考文献 star-->
+        <div class="mod_article">
+            <div class="column">
+                <h2>参考文献</h2>
+                <div class="intro">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!--参考文献 end-->
+        <!--<div id="js_gui_suc" class="gui_success hidden">复制代码成功!</div>-->
+        <div id="js_gui_suc" class="pop_dialog hidden" style="display:;margin:-100px 0 0 -120px;width:240px;">
+            <div class="inner">
+                <!--小浮层-->
+                <div class="small">
+                    <i class="icon_success"></i>
+                    <h4>代码复制成功</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+    </div>
+</div>
+<footer class="mod_footer">
+    <div>
+    <p>Copyright © 2012 <a href="#"  class="ecd">www@webx32.com</a>.</p>
+    <p class="opt"><a href="#">关于我们</a>|<a href="#" >纠错/反馈</a></p>
+    <p class="support">Power by HTML5 &amp; CSS3. Support for <a href="http://www.google.com/chrome/" target="_blank">Chrome.</a></p>
+    </div>
+</footer>
+<!--代码运行模块-->
+<div class="mod_run_box" id="mod_run_box">
+    <div class="mod_btn_box">
+        <a href="#" id="edit">修改</a>
+        <a href="#" id="run_again">重新运行</a>
+        <a href="#" id="close">关闭</a>
+    </div>
+    <div class="edit_code_box" id="edit_code_box">
+        <textarea id="css_code_edit" class="edit_code_textarea"></textarea>
+        <textarea id="html_code_edit" class="edit_code_textarea"></textarea>
+    </div>
+    <div class="mod_run_code" id="mod_run_code"></div>
+</div>
+<div class="pop_mask" id="mask" style="display:none;"></div>
+<div id="pop2" class="pop_dialog downs" style="display:none;margin:-150px 0 0 -360px;width:720px;">
+    <div class="hd">
+        
+        <a href="#" class="pop_close" id="close_chrome" title="关闭">X</a>
+    </div>
+    <div class="inner">
+        <!--大浮层-->
+    
+    </div>
+</div>
+<script type="text/javascript" src="./js/jquery-1.7.2.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="./js/ZeroClipboard.js" charset="UTF-8"></script>
+<script type="text/javascript" src="./js/prettify.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="./js/jquery.syntaxhighlighter.js" charset="UTF-8"></script>
+<script type="text/javascript" src="./js/lab.js" charset="UTF-8"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?abd090cd24612c21f27629ab73c485be";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body></html>

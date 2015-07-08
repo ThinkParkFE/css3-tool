@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://ecd.tencent.com/css3/html/demo/more-preperty.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>动画属性中多个值的运用</title>
+<style>
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-size:12px;
+	line-height:1.5;
+}
+.wrap {
+	width:960px;
+	margin:0 auto;
+}
+.demo {
+	position:relative;
+	background:#99ccff;
+	height:300px;
+	margin:10px auto;
+}
+.demo .inner {
+	position:absolute;
+	width:100px;
+	height:100px;
+	background:#003366;
+	font-size:30px; text-align:center; line-height:100px;color:#fff;
+}
+.demo .one{
+    left:0;
+	top:0;
+	-webkit-transition-property:all;
+	-webkit-transition-duration:2s;
+	-webkit-transition-delay:0;
+	-webkit-transition-timing-function:ease;
+}
+.demo .two{
+    left:110px;
+	top:0;
+	-webkit-transition-property:left, top, background;
+	-webkit-transition-duration:1s, 2s, 2s;
+	-webkit-transition-delay:0, 0, 2s;
+	-webkit-transition-timing-function:ease, ease-in, linear;
+}
+.demo:hover .one {
+	left:200px;
+	top:200px;
+	background:red;
+}
+.demo:hover .two {
+	left:310px;
+	top:200px;
+	background:red;
+}
+.intro{
+	font-size:14px;
+	padding:0 0 10px;
+}
+h1{
+	padding:20px 0;
+    font-size:20px;
+    text-align:center;
+}
+.code_title{height:30px;line-height:30px;border:1px solid #ddd;background:#eee;padding:0 10px;font-size:14px;}
+.code_txt{border:1px solid #ddd;background:#f5f5f5;border-top:none;margin-bottom:10px;padding:10px;color:#006699;font-size:14px;font-family:Arial, Helvetica, sans-serif;}
+.code_txt .indent{text-indent:2em;}
+.code_txt .imp{color:#F60;}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+    <h1>动画属性中多个值的运用</h1>
+    <div class="content">
+        <p class="intro">CSS3里头的动画属性可以对应多个值，也就是说可以对进行动画的不同的属性来设置不一样的值。解释起来有点难，这里通过一个实例来进行讲解。</p>
+        <h2 class="code_title">CSS</h2>
+        <div class="code_txt">
+            <code>
+                <p>.demo{</p>
+                <p class="indent">position:relative;</p>
+                <p class="indent">height:300px;</p>
+                <p class="indent">margin:10px auto;</p>
+                <p class="indent">background:#99ccff;</p>
+                <p>}</p>
+                <p>.demo .inner{</p>
+                <p class="indent">position:absolute;</p>
+                <p class="indent">width:100px;</p>
+                <p class="indent">height:100px;</p>
+                <p class="indent">background:#003366;</p>
+                <p>}</p>
+                
+                <p>.demo .one{</p>
+                <p class="indent">left:0;</p>
+                <p class="indent">top:0;</p>
+                <p class="indent">-webkit-transition-property:<span class="imp">all</span></p>
+                <p class="indent">-webkit-transition-duration:<span class="imp">2s;</span></p>
+                <p class="indent">-webkit-transition-delay:<span class="imp">2s;</span></p>
+                <p class="indent">-webkit-transition-timing-function:<span class="imp">ease;</span></p>
+                <p>}</p>
+                
+                <p>.demo .two{</p>
+                <p class="indent">left:110px;</p>
+                <p class="indent">top:0;</p>
+                <p class="indent">-webkit-transition-property:<span class="imp">left,top,background;</span></p>
+                <p class="indent">-webkit-transition-duration:<span class="imp">1s,2s,2s;</span></p>
+                <p class="indent">-webkit-transition-delay:<span class="imp">0,0,2s;</span></p>
+                <p class="indent">-webkit-transition-timing-function:<span class="imp">ease,ease-in,linear;</span></p>
+                <p>}</p>
+                
+                <p>.demo:hover .one{</p>
+                <p class="indent">left:200px;</p>
+                <p class="indent">top:200px;</p>
+                <p class="indent">background:red;</p>
+                <p>}</p>
+                
+                <p>.demo:hover .two{</p>
+                <p class="indent">left:310px;</p>
+                <p class="indent">top:200px;</p>
+                <p class="indent">background:red;</p>
+                <p>}</p>
+            </code>
+        </div>
+        <h2 class="code_title">HTML</h2>
+        <div class="code_txt">
+            <code>
+                <p>&lt;div class="demo"&gt;</p>
+                <p class="indent">&lt;div class="inner one"&gt;1&lt;/div&gt;</p>
+                <p>&lt;/div&gt;</p>
+                <p>&lt;div class="demo"&gt;</p>
+                <p class="indent">&lt;div class="inner two"&gt;2&lt;/div&gt;</p>
+                <p>&lt;/div&gt;</p>
+            </code>
+        </div>
+        <div class="demo">
+            <div class="inner one">1</div>
+            <div class="inner two">2</div>
+        </div>
+        <p class="intro">可以看出第一个元素所有的属性都是在同样的时间内完成了动画，而第二个元素的left,top,background是在不同的时间内完成动画，这就是对变换时间设置了多个值的效果，每个进行动画的属性对应了相应的变换时间。</p>
+    </div>
+</div>
+
+
+</body></html>
